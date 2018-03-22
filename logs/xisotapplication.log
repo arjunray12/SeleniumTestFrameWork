@@ -1,7 +1,0 @@
-2018-03-22 18:32:35,653 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumBase:40:SeleniumBase.java) - BeforeSuite Called
-2018-03-22 18:32:35,662 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumLocalWebDriverFactory:30:SeleniumLocalWebDriverFactory.java) - com.wfs.automation.selenium.driver.DriverConfig@525f1e4e
-2018-03-22 18:32:41,928 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumBase:49:SeleniumBase.java) - BeforeTest Called
-2018-03-22 18:32:41,935 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumBase:58:SeleniumBase.java) - BeforeClass Called
-2018-03-22 18:32:41,948 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumBase:67:SeleniumBase.java) - BeforeMethod Called
-2018-03-22 18:32:41,949 [main] INFO  (com.wfs.automation.selenium.test.applicationtest.PageObjectTest:22:PageObjectTest.java) - BeforeMethod Called For Default Page Load
-2018-03-22 18:34:12,030 [main] INFO  (com.wfs.automation.selenium.driver.SeleniumBase:86:SeleniumBase.java) - After Suite Run, going to close the open browser CHROME
