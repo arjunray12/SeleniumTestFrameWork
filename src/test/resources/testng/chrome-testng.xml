@@ -4,7 +4,7 @@
 	<parameter name="browser" value="CHROME"/>
 	<test name="TestOnChrome">
 		<classes>
-			<class name="com.wfs.automation.selenium.test.applicationtest.PageObjectTest"/>
+			<class name="com.automation.selenium.test.applicationtest.ValidatePurchase"/>
 		</classes>
 	</test>
 </suite>

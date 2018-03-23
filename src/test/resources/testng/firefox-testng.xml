@@ -4,7 +4,7 @@
 	<parameter name="browser" value="FIREFOX"/>
   <test name="Test">
     <classes>
-      <class name="com.wfs.automation.selenium.test.applicationtest.PageObjectTest"/>
+      <class name="com.automation.selenium.test.applicationtest.ValidatePurchase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
