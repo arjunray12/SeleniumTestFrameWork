@@ -97,7 +97,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>2.21.0</version>
 						<configuration>
-							<systemPropertyVariables>
+<!-- 							<systemPropertyVariables>
 								<browser>${browser}</browser>
 							</systemPropertyVariables>
 							<properties>
@@ -110,7 +110,7 @@
 									<value>org.uncommons.reportng.HTMLReporter,
 										org.uncommons.reportng.JUnitXMLReporter</value>
 								</property>
-							</properties>
+							</properties> -->
 							<testFailureIgnore>true</testFailureIgnore>
 							<skipTests>false</skipTests>
 							<suiteXmlFiles>
@@ -136,7 +136,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>2.21.0</version>
 						<configuration>
-							<systemPropertyVariables>
+<!-- 							<systemPropertyVariables>
 								<browser>${browser}</browser>
 							</systemPropertyVariables>
 							<properties>
@@ -149,7 +149,7 @@
 									<value>org.uncommons.reportng.HTMLReporter,
 										org.uncommons.reportng.JUnitXMLReporter</value>
 								</property>
-							</properties>
+							</properties> -->
 							<testFailureIgnore>true</testFailureIgnore>
 							<skipTests>false</skipTests>
 							<suiteXmlFiles>
@@ -175,6 +175,42 @@
 							<systemPropertyVariables>
 								<browser>${browser}</browser>
 							</systemPropertyVariables>
+<!-- 							<properties>
+								<property>
+									<name>usedefaultlisteners</name>
+									<value>false</value>
+								</property>
+								<property>
+									<name>listener</name>
+									<value>org.uncommons.reportng.HTMLReporter,
+										org.uncommons.reportng.JUnitXMLReporter</value>
+								</property>
+							</properties> -->
+							<testFailureIgnore>true</testFailureIgnore>
+							<skipTests>false</skipTests>
+							<suiteXmlFiles>
+								<suiteXmlFile>src/test/resources/testng/ie-testng.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>ALL</id>
+			<properties>
+				<browser>ALL</browser>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.21.0</version>
+						<configuration>
+<!-- 							<systemPropertyVariables>
+								<browser>${browser}</browser>
+							</systemPropertyVariables>
 							<properties>
 								<property>
 									<name>usedefaultlisteners</name>
@@ -185,11 +221,12 @@
 									<value>org.uncommons.reportng.HTMLReporter,
 										org.uncommons.reportng.JUnitXMLReporter</value>
 								</property>
-							</properties>
+							</properties> -->
 							<testFailureIgnore>true</testFailureIgnore>
 							<skipTests>false</skipTests>
 							<suiteXmlFiles>
 								<suiteXmlFile>src/test/resources/testng/firefox-testng.xml</suiteXmlFile>
+								<suiteXmlFile>src/test/resources/testng/chrome-testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
